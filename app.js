@@ -5,10 +5,17 @@ console.log('starting app.js'); //keeping track of how app is running
 //fs.appendFile or others
 const fs = require('fs');
 const os = require('os');
+const _ = require('lodash');
 const notes = require('./notes.js'); //requiring our own files
 
 
-console.log('Result:', notes.add(9, -2));
+var filteredArray = _.uniq(['Roxie', 1, 'Roxie', 1, 2, 3, 4]);
+console.log(filteredArray);
+
+// console.log(_.isString(true));  //will be false because boolean is not a string
+// console.log(_.isString('Roxie'));
+
+// console.log('Result:', notes.add(9, -2));
 
 // var res = notes.addNote();
 // console.log(res);
