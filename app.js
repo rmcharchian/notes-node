@@ -7,7 +7,13 @@ const fs = require('fs');
 const os = require('os');
 const notes = require('./notes.js'); //requiring our own files
 
-var user = os.userInfo();
+
+console.log('Result:', notes.add(9, -2));
+
+// var res = notes.addNote();
+// console.log(res);
+
+// var user = os.userInfo();
 //console.log(user);
 
 
@@ -19,8 +25,8 @@ var user = os.userInfo();
 
 
 //es6 version - easier to use
-fs.appendFile('greetings.txt', `Hello ${user.username}! You are ${notes.age}.`, function (err) {
-    if (err) {
-        console.log('Unable to write to file');
-    }
-});
+// fs.appendFile('greetings.txt', `Hello ${user.username}! You are ${notes.age}.`, function (err) {
+//     if (err) {
+//         console.log('Unable to write to file');
+//     }
+// });
