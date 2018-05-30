@@ -9,7 +9,7 @@ const _ = require('lodash');
 const notes = require('./notes.js'); //requiring our own files
 
 
-var filteredArray = _.uniq(['Roxie', 1, 'Roxie', 1, 2, 3, 4]);
+var filteredArray = _.uniq(['Paul', 1, 'Roxie', 1, 2, 3, 4]);
 console.log(filteredArray);
 
 // console.log(_.isString(true));  //will be false because boolean is not a string
